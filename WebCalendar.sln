@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebCalendar", "WebCalendar\WebCalendar.csproj", "{B63ECD66-D5A8-4510-9D59-7EB0BF5E1346}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebCalendar.Tests", "WebCalendar.Tests\WebCalendar.Tests.csproj", "{9624EB95-6243-45C2-A9F4-58CACECE3869}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B63ECD66-D5A8-4510-9D59-7EB0BF5E1346}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B63ECD66-D5A8-4510-9D59-7EB0BF5E1346}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B63ECD66-D5A8-4510-9D59-7EB0BF5E1346}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B63ECD66-D5A8-4510-9D59-7EB0BF5E1346}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9624EB95-6243-45C2-A9F4-58CACECE3869}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9624EB95-6243-45C2-A9F4-58CACECE3869}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9624EB95-6243-45C2-A9F4-58CACECE3869}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9624EB95-6243-45C2-A9F4-58CACECE3869}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
