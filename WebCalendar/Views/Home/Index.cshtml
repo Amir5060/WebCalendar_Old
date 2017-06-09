@@ -23,11 +23,13 @@
                 // $.connection.hub.id => this is very important. Without it, SignalR sends to all inculding the same user! Duplicate message.
                 calendarMessaging.server.newUser(uuid, $.connection.hub.id);
                 $('#btnPopupSave').click(function () {
+                    // Sends to server. Calls a method in server.
                     calendarMessaging.server.send(uuid, $('#eventTitle').val(), moment($('#eventStart').val()), moment($('#eventEnd').val()));
                 });
 
             });
 
+            // Receive from server. Calls in the server.
             calendarMessaging.client.broadCastMessage = function (title, startDate, endDate) {
                 var eventData;
                 eventData = {
