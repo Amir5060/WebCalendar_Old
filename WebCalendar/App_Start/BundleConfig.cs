@@ -20,6 +20,7 @@ namespace WebCalendar
                         "~/Scripts/modernizr-*"));
 
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
+                      "~/Scripts/bootstrap-modal.js",
                       "~/Scripts/bootstrap.js",
                       "~/Scripts/respond.js"));
 
@@ -31,8 +32,8 @@ namespace WebCalendar
                 "~/Content/fullcalendar.css"));
 
             bundles.Add(new ScriptBundle("~/bundles/fullcalendarjs").Include(
-                "~/Scripts/fullcalendar/fullcalendar.min.js",
-                "~/Scripts/fullcalendar/fullcalendar.js",
+                //"~/Scripts/fullcalendar/fullcalendar.min.js",
+                //"~/Scripts/fullcalendar/fullcalendar.js",
                 "~/Scripts/moment.js"));
         }
     }
