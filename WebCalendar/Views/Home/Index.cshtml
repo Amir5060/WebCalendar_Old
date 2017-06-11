@@ -21,16 +21,18 @@
                 var uuid = guid();
                 $('#userID').val(uuid);
                 // $.connection.hub.id => this is very important. Without it, SignalR sends to all inculding the same user! Duplicate message.
-                calendarMessaging.server.newUser(uuid, $.connection.hub.id);
+                //calendarMessaging.server.newUser(uuid, $.connection.hub.id);
                 $('#btnPopupSave').click(function () {
                     // Sends to server. Calls a method in server.
-                    calendarMessaging.server.send(uuid, $('#eventTitle').val(), moment($('#eventStart').val()), moment($('#eventEnd').val()));
+                    console.log("Here:" + $.connection.hub.id);
+                    calendarMessaging.server.send($.connection.hub.id, $('#eventTitle').val(), moment($('#eventStart').val()), moment($('#eventEnd').val()));
                 });
 
             });
 
             // Receive from server. Calls in the server.
-            calendarMessaging.client.broadCastMessage = function (title, startDate, endDate) {
+            calendarMessaging.client.broadCastMessage = function (userId, title, startDate, endDate) {
+                console.log(userId);
                 var eventData;
                 eventData = {
                     title: title,
@@ -60,6 +62,7 @@
                 allDaySlot: false,
                 selectable: true,
                 slotMinutes: 15,
+                firstDay: 1,
                 //events: '/Home/GetDiaryEvents/',
                 eventClick: function (calEvent, jsEvent, view) {
                     alert('You clicked on event id: ' + calEvent.id
@@ -177,20 +180,20 @@
 
         $('#btnPopupSave').click(function () {
 
-            $('#popupEventForm').hide();
+            //$('#popupEventForm').hide();
 
-            var title = $('#eventTitle').val();
-            var eventData;
-            if (title) {
-                eventData = {
-                    title: $('#eventTitle').val(),
-                    start: $('#eventStart').val(),
-                    end: $('#eventEnd').val()
-                };
-                // Write in the caledar!
-                $('#calendar').fullCalendar('renderEvent', eventData, true);
-            }
-            $('#calendar').fullCalendar('unselect');
+            //var title = $('#eventTitle').val();
+            //var eventData;
+            //if (title) {
+            //    eventData = {
+            //        title: $('#eventTitle').val(),
+            //        start: $('#eventStart').val(),
+            //        end: $('#eventEnd').val()
+            //    };
+            //    // Write in the caledar!
+            //    $('#calendar').fullCalendar('renderEvent', eventData, true);
+            //}
+            //$('#calendar').fullCalendar('unselect');
 
             //var dataRow = {
             //    'Title': $('#eventTitle').val(),

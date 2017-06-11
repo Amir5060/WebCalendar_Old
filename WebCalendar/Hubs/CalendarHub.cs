@@ -14,7 +14,7 @@ namespace WebCalendar.Hubs
         public void Send(string userId, string name, DateTime startDate, DateTime endDate)
         {
             CalendarClass myCalendarClass = new CalendarClass();
-            Clients.All.broadCastMessage(name, startDate, endDate);
+            Clients.All.broadCastMessage(userId, name, startDate, endDate);
         }
 
         public void NewUser(string guid, string name)
