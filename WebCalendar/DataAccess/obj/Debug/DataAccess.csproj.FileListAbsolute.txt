@@ -1,0 +1,7 @@
+C:\Users\amir.naji\Documents\Visual Studio 2015\Projects\WebCalendar\DataAccess\obj\Debug\DataAccess.csprojResolveAssemblyReference.cache
+C:\Users\amir.naji\Documents\Visual Studio 2015\Projects\WebCalendar\DataAccess\bin\Debug\DataAccess.dll
+C:\Users\amir.naji\Documents\Visual Studio 2015\Projects\WebCalendar\DataAccess\bin\Debug\DataAccess.pdb
+C:\Users\amir.naji\Documents\Visual Studio 2015\Projects\WebCalendar\DataAccess\bin\Debug\Dapper.dll
+C:\Users\amir.naji\Documents\Visual Studio 2015\Projects\WebCalendar\DataAccess\bin\Debug\Dapper.xml
+C:\Users\amir.naji\Documents\Visual Studio 2015\Projects\WebCalendar\DataAccess\obj\Debug\DataAccess.dll
+C:\Users\amir.naji\Documents\Visual Studio 2015\Projects\WebCalendar\DataAccess\obj\Debug\DataAccess.pdb
